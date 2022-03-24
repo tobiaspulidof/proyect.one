@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> FERRARI LOVERS
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ferrari Lovers</title>
+</head>
+<body>
+    <div class="titulo-pcipal"><p>FERRARI LOVERS</p></div>
+    <header> 
+        <div class="div-deinicio"><img class="imagen-uno" src="images/ferrari.logo.jpg" alt="FERRARI"></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="informacion.html">Informacion</a></li>
+                <li><a href="ubicacion.html">Ubicacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+<main>
+    <div class="contact">
+    <img class="contact-image" src="images/ferrari.support.jpg" alt=""> 
+    <img class="contact-image" src="images/ferrari-contact.jpg" alt="">
+    <img class="contact-image" src="images/ferrari.team.jpg" alt="">
+    </div>
+
+    <form id="form">
+        <!-- Nombre -->
+        <label class="label-color" for="name">Ingrese su nombre:</label>
+        <input type="text" name="nombre" placeholder="Juan Carlos" id="nombre" required> <br><br>
+        <!-- Email -->
+        <label class="label-color" for="email">Ingrese su email:</label>
+        <input type="email" name="correo" placeholder="ejemplo@email.com" id="correo" required><br><br>
+        <!-- Mensaje -->
+        <label class="label-color" for="mensaje">Ingrese su mensaje:</label> <br>
+        <textarea name="mensaje" cols="30" rows="10" placeholder="Hola, quisiera info." id='mensaje'
+            required></textarea><br><br>
+        <!-- Boton -->
+        <input type="submit" id="button" value="Enviar mensaje">
+
+    </form>
+
+
+</main>
+
+<footer>
+<p>
+    Una pagina de creacion solo para fanaticos y aquellos que quieran introducirse en el mundo de Ferrari
+</p>
+<p>
+    Proyecto creado por alumno del equipo <a href="https://www.coderhouse.es/">Coderhouse</a>
+    <ul>
+        <li><a href="https://twitter.com/ferrari">FERRARI TWITTER</a></li>
+        <li><a href="https://www.instagram.com/ferrari/?hl=es">FERRARI INSTAGRAM</a></li>
+        <li><a href="https://www.ferrari.com/es-ES">FERRARI OFICIAL</a></li>
+    </ul>
+</p>
+</footer> 
+
+<script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_9ooY977MnjPxUnB2rZNZA')
+</script>
+
+<script>
+    const btn = document.getElementById('button');
+    const nombre = document.getElementById('nombre');
+        const correo = document.getElementById('correo');
+        const mensaje = document.getElementById('mensaje');
+
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_v834fvy';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar mensaje';
+      alert('Gracias!');
+      nombre.value = '';
+      correo.value = '';
+      mensaje.value = '';
+    }, (err) => {
+      btn.value = 'Enviar mensaje';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
+
+
+
+
+
+</body>
+</html>
