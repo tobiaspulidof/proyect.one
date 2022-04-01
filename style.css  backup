@@ -1,0 +1,412 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Roboto+Serif:wght@200&family=Source+Serif+4:wght@200&display=swap');
+
+
+body{
+        color:rgb(49, 56, 56);
+        font-family: 'Roboto Serif', sans-serif;
+        font-size: 12px;
+        background-color: rgb(49, 56, 56);
+        background-image: url(images/wallpaper-ferrari.jpg);
+        flex-wrap: wrap;
+    
+    
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.imagen-uno{
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    height: min-content;
+}
+
+@media (max-width: 768px) {
+      .imagen-uno{
+          display: flex;
+          flex-wrap: wrap;
+          width: 900px;
+          height: 220px;
+      }
+}
+
+.titulo-pcipal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label{
+    color:rgb(231, 231, 22) ;
+}
+
+
+a{
+    color: rgb(231, 231, 22) !important;
+} 
+
+/*NAV*/
+ul{
+    display: flex;
+    margin-top: revert;
+    justify-content: space-between;
+    align-items: center;
+    background-color: darkred;
+    color: tomato;
+    border: solid black;
+    border-radius: 10px;
+    height: 35px;
+}
+
+
+
+@media (max-width: 768px) {
+    ul{
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+    }
+}
+
+/*NAV*/
+
+a{
+    text-decoration: none;
+}
+
+p{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(231, 231, 22);
+    font-size: larger;
+    font-style: italic;
+}
+
+
+li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: darkred;
+    border: 2px solid none;
+}
+
+/*INICIO*/  
+
+.foto-inicio{
+    padding: 0%;
+    border: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 auto;
+    height: 100%;
+    width: 95%;
+    border: 25px solid yellow;
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+@media (max-width: 768px) {
+    .foto-inicio{
+        display: flex;
+        flex-wrap: wrap;
+        width: fit-content;
+    }
+}
+
+.div-deinicio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 25px solid yellow;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.de-inicio{
+    display: flex;
+    flex-wrap: wrap;
+    height: min-content;
+    width: min-content;
+    padding: 50px;  
+    border: 12px solid black;
+    background-color: maroon; 
+}
+
+/*FIN DE INICIO*/
+
+
+
+
+/*SECCION CONTACTO*/
+.contact{
+    display: flex;
+    height: 300px;
+    width: auto;
+    padding: 12px; 
+    border: 12px solid black;
+    background-color: yellow;
+    border-radius: 30px;
+    justify-content: flex-start;
+}
+
+@media (max-width: 768px) {
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        width: min-content;
+        object-fit: cover;
+    }
+    
+}
+
+.contact-image{
+    display: flex;
+    height: auto;
+    width: auto;
+    max-width: 420px;
+    max-height: 900px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+
+#form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: min-content;
+    margin: 30px;
+    border: 12px solid rgb(49, 56, 56);
+    background-color: rgb(49, 56, 56);
+    border-radius: 12px;
+}
+
+#form:hover{
+    border-color: yellow;
+    background-color: yellow;
+}
+
+input::placeholder{
+    color: gray;
+}
+
+.label-color{
+    display: flex;
+    outline: none;
+    font-size: larger;
+    color: black;
+    border: 0; 
+    background-color:yellow;
+    justify-content: center;
+}
+
+.label-color:hover{
+    background-color: yellow;
+}
+
+/*FIN SECCION CONTACTO*/
+
+
+/*SECCION GALERIA*/
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.de-galeria{
+    width: 350px;
+    height: 400px;
+    padding: 5px;  
+    border: 20px solid black;
+    background-color: yellow;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    border-width: thick;
+}
+
+.de-galeria:hover{
+    transform: rotate(15deg);
+    transition: 2s ease-out;
+}
+/*FIN SECCION GALERIA*/
+
+
+/*SECCION UBICACION*/
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    border: 20px solid black;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.foto-fabrica{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0px;
+    border: 12px solid yellow;
+    background-color: maroon;
+    border-radius: 15px;
+}
+
+/*FIN SECCION UBICACION*/
+
+
+/*SECCION INFO*/
+.de-info{
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto; 
+    padding: 12px; 
+    border: 12px solid black;
+    background-color: whitesmoke;
+    border-radius: 12px; 
+    object-fit: contain; 
+}
+
+
+.contenedor-historico{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: whitesmoke;
+    border: 12px solid black;
+    border-radius: 12px;
+}
+
+
+.ha{
+    height: 400px;
+    padding: 5px;  
+    object-fit: cover;
+}
+
+.hb{
+    height: 400px;
+    padding: 5px;  
+    object-fit: cover;
+}
+
+.hc{
+    height: 400px;
+    padding: 5px;  
+    object-fit: cover;
+}
+
+.hd{
+    object-fit: cover;
+    grid-row: 2 span;
+}
+
+.he{
+    height: 400px;
+    padding: 5px;  
+    object-fit: cover;
+}
+
+/*FIN SECCION INFO*/
+
+/*BOOTSTRAP DE INICIO*/
+
+.slide{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 25px solid yellow;
+    border-radius: 20px;
+    background-color: yellow;
+}
+
+
+.slide img {
+    height: 65vh;
+    object-fit: cover;
+    justify-content: center;
+}
+
+.textodevideo{
+    display: flex;
+    background-color: maroon;
+    width: 50%;
+    float: right;
+    padding: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    border-radius: 10px;
+    border: 5px solid yellow;
+}
+
+/*FIN BOOSTRAP DE INICIO*/
+
+/*BOOSTRAP CONTACT*/
+.contacting{
+    border: 20px solid yellow;
+    background-color: maroon;
+    object-fit: cover;
+}
+
+.formcontainer{
+    display: flex;
+    margin: 10px;
+    background-color: maroon;
+    border: 20px solid black;
+    border-radius: 30px;
+}
+
+.card{
+    display: flex;
+    height: 450px;
+    margin: 60px;
+    object-fit: cover;
+}
+
+.card:hover{
+    background-color: yellow;
+}
+
+.card-body{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0%;
+    object-fit: cover;
+}
+    
+.card-text{
+    margin: 0px;
+    color: black;
+    padding: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*FIN BOOSTRAP CONTACT*/
+
