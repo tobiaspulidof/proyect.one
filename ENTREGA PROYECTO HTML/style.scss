@@ -64,19 +64,19 @@ ul{
     border: solid black;
     border-radius: 10px;
     height: 35px;
-}
-
-
-
-@media (max-width: 768px) {
-    ul{
-        flex-direction: column;
-        padding: 30px;
-        justify-content: center;
+    @media (max-width: 768px) {
+        ul{
+            flex-direction: column;
+            padding: 30px;
+            justify-content: center;
+        }
     }
+
+
 }
 
-/*NAV*/
+
+/*FIN NAV*/
 
 a{
     text-decoration: none;
@@ -114,15 +114,17 @@ li{
     border: 25px solid yellow;
     border-radius: 20px;
     background-color: yellow;
+    @media (max-width: 768px) {
+        .foto-inicio{
+            display: flex;
+            flex-wrap: wrap;
+            width: fit-content;
+        }
+    }
+
+
 }
 
-@media (max-width: 768px) {
-    .foto-inicio{
-        display: flex;
-        flex-wrap: wrap;
-        width: fit-content;
-    }
-}
 
 .div-deinicio{
     display: flex;
@@ -158,17 +160,19 @@ li{
     background-color: yellow;
     border-radius: 30px;
     justify-content: flex-start;
+    @media (max-width: 768px) {
+        .contact{
+            display: flex;
+            flex-wrap: wrap;
+            width: min-content;
+            object-fit: cover;
+        }
+        
+    }
+
+
 }
 
-@media (max-width: 768px) {
-    .contact{
-        display: flex;
-        flex-wrap: wrap;
-        width: min-content;
-        object-fit: cover;
-    }
-    
-}
 
 .contact-image{
     display: flex;
@@ -190,29 +194,29 @@ li{
     border: 12px solid rgb(49, 56, 56);
     background-color: rgb(49, 56, 56);
     border-radius: 12px;
-}
+    &:hover{
+        border-color: yellow;
+        background-color: yellow;
+    }
+    input::placeholder{
+        color: gray;
+    }
+    .label-color{
+        display: flex;
+        outline: none;
+        font-size: larger;
+        color: black;
+        border: 0; 
+        background-color:yellow;
+        justify-content: center;
+        &:hover{
+            background-color: yellow;
+        }
+    
+    
+    }
 
-#form:hover{
-    border-color: yellow;
-    background-color: yellow;
-}
 
-input::placeholder{
-    color: gray;
-}
-
-.label-color{
-    display: flex;
-    outline: none;
-    font-size: larger;
-    color: black;
-    border: 0; 
-    background-color:yellow;
-    justify-content: center;
-}
-
-.label-color:hover{
-    background-color: yellow;
 }
 
 /*FIN SECCION CONTACTO*/
@@ -244,12 +248,14 @@ input::placeholder{
     margin-bottom: 30px;
     object-fit: cover;
     border-width: thick;
+    &:hover{
+        transform: rotate(15deg);
+        transition: 2s ease-out;
+    }
 }
 
-.de-galeria:hover{
-    transform: rotate(15deg);
-    transition: 2s ease-out;
-}
+
+
 /*FIN SECCION GALERIA*/
 
 
@@ -301,9 +307,8 @@ input::placeholder{
     background-color: whitesmoke;
     border: 12px solid black;
     border-radius: 12px;
-}
-
-
+}    
+      
 .ha{
     height: 400px;
     padding: 5px;  
@@ -335,6 +340,7 @@ input::placeholder{
 
 /*FIN SECCION INFO*/
 
+
 /*BOOTSTRAP DE INICIO*/
 
 .slide{
@@ -343,14 +349,15 @@ input::placeholder{
     border: 25px solid yellow;
     border-radius: 20px;
     background-color: yellow;
-}
+    & img {
+        height: 65vh;
+        object-fit: cover;
+        justify-content: center;
+    }
 
 
-.slide img {
-    height: 65vh;
-    object-fit: cover;
-    justify-content: center;
 }
+
 
 .textodevideo{
     display: flex;
@@ -386,11 +393,11 @@ input::placeholder{
     height: 450px;
     margin: 60px;
     object-fit: cover;
+    .card:hover{
+        background-color: yellow;
+    }
 }
 
-.card:hover{
-    background-color: yellow;
-}
 
 .card-body{
     display: flex;

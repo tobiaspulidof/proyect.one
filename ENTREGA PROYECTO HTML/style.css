@@ -84,7 +84,7 @@ ul {
 }
 
 @media (max-width: 768px) {
-  ul {
+  ul ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -96,7 +96,7 @@ ul {
   }
 }
 
-/*NAV*/
+/*FIN NAV*/
 a {
   text-decoration: none;
 }
@@ -145,7 +145,7 @@ li {
 }
 
 @media (max-width: 768px) {
-  .foto-inicio {
+  .foto-inicio .foto-inicio {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -206,7 +206,7 @@ li {
 }
 
 @media (max-width: 768px) {
-  .contact {
+  .contact .contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -256,23 +256,23 @@ li {
   background-color: yellow;
 }
 
-input::-webkit-input-placeholder {
+#form input::-webkit-input-placeholder {
   color: gray;
 }
 
-input:-ms-input-placeholder {
+#form input:-ms-input-placeholder {
   color: gray;
 }
 
-input::-ms-input-placeholder {
+#form input::-ms-input-placeholder {
   color: gray;
 }
 
-input::placeholder {
+#form input::placeholder {
   color: gray;
 }
 
-.label-color {
+#form .label-color {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -286,7 +286,7 @@ input::placeholder {
           justify-content: center;
 }
 
-.label-color:hover {
+#form .label-color:hover {
   background-color: yellow;
 }
 
@@ -296,13 +296,9 @@ input::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  display: -ms-grid;
+  flex-wrap: wrap;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
   width: 100%;
   -ms-flex-pack: distribute;
@@ -390,8 +386,7 @@ input::placeholder {
 .contenedor-historico {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   background-color: whitesmoke;
   border: 12px solid black;
   border-radius: 12px;
@@ -495,7 +490,7 @@ input::placeholder {
      object-fit: cover;
 }
 
-.card:hover {
+.card .card:hover {
   background-color: yellow;
 }
 
