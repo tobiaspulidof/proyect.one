@@ -1,0 +1,30 @@
+/*GALERIA*/
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.de-galeria{
+    width: 350px;
+    height: 400px;
+    padding: 5px;  
+    border: 20px solid black;
+    background-color: yellow;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    object-fit: cover;
+    border-width: thick;
+    &:hover{
+        transform: rotate(15deg);
+        transition: 2s ease-out;
+    }
+}
+
+/*FIN DE GALERIA*/

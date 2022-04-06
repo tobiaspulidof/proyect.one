@@ -1,0 +1,94 @@
+
+// VARIABLES
+$color-principal : maroon; 
+
+
+@import "./PARTIALS/inicio";
+@import "./PARTIALS/galeria";
+@import "./PARTIALS/ubicacion";
+@import "./PARTIALS/info";
+@import "./PARTIALS/nav"; 
+@import "./PARTIALS/contacto";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Roboto+Serif:wght@200&family=Source+Serif+4:wght@200&display=swap');
+
+
+body{
+        color:rgb(49, 56, 56);
+        font-family: 'Roboto Serif', sans-serif;
+        font-size: 12px;
+        background-color: rgb(49, 56, 56);
+        background-image: url(images/wallpaper-ferrari.jpg);
+        flex-wrap: wrap;
+    
+    
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.imagen-uno{
+    display: flex;
+    flex-wrap: wrap;
+    width: min-content;
+    height: min-content;
+}
+
+@media (max-width: 768px) {
+      .imagen-uno{
+          display: flex;
+          flex-wrap: wrap;
+          width: 900px;
+          height: 220px;
+      }
+}
+
+.titulo-pcipal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+label{
+    color:rgb(231, 231, 22) ;
+}
+
+
+a{
+    color: rgb(231, 231, 22) !important;
+} 
+
+
+a{
+    text-decoration: none;
+}
+
+p{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(231, 231, 22);
+    font-size: larger;
+    font-style: italic;
+}
+
+
+li{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    font-size: 16px;
+    background-color: $color-principal;
+    border: 2px solid none;
+}
+
+
+
+
+
+

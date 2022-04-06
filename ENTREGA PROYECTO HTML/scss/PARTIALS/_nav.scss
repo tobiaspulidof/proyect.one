@@ -1,0 +1,24 @@
+/*NAV*/
+
+ul{
+    display: flex;
+    margin-top: revert;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-principal;
+    color: tomato;
+    border: solid black;
+    border-radius: 10px;
+    height: 35px;
+    @media (max-width: 768px) {
+        ul{
+            flex-direction: column;
+            padding: 30px;
+            justify-content: center;
+        }
+    }
+
+
+}
+
+/*FIN NAV*/

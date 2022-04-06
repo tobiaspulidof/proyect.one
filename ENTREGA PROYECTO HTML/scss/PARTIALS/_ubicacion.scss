@@ -1,0 +1,25 @@
+/*UBICACION*/
+
+.ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 500px;
+    border: 20px solid black;
+    border-radius: 15px;
+    background-color: black;
+}
+
+.foto-fabrica{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0px;
+    border: 12px solid yellow;
+    background-color: $color-principal;
+    border-radius: 15px;
+}
+
+/*FIN DE UBICACION*/
