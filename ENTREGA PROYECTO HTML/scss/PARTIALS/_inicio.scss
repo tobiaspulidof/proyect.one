@@ -9,9 +9,9 @@
     margin: 0 auto;
     height: 100%;
     width: 95%;
-    border: 25px solid yellow;
-    border-radius: 20px;
-    background-color: yellow;
+    border: map-get($border , border );
+    border-radius: map-get($border , border-radius );
+    background-color: $color-sec;
     @media (max-width: 768px) {
         .foto-inicio{
             display: flex;
@@ -23,13 +23,12 @@
 
 }
 
-
 .div-deinicio{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border: 25px solid yellow;
-    border-radius: 20px;
+    border: map-get($border , border );
+    border-radius: map-get($border , border-radius );
     background-color: black;
 }
 
@@ -50,9 +49,9 @@
 .slide{
     margin-top: 10px;
     margin-bottom: 15px;
-    border: 25px solid yellow;
-    border-radius: 20px;
-    background-color: yellow;
+    border: map-get($border , border );
+    border-radius: map-get($border , border-radius );
+    background-color: $color-sec;
     & img {
         height: 65vh;
         object-fit: cover;
@@ -72,7 +71,7 @@
     margin-top: 5%;
     justify-content: center;
     border-radius: 10px;
-    border: 5px solid yellow;
+    border: 5px solid $color-sec;
 }
 
 /*FIN BOOSTRAP INICIO*/

@@ -1,5 +1,97 @@
-/*INICIO*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Roboto+Serif:wght@200&family=Source+Serif+4:wght@200&display=swap");
+body {
+  color: #313838;
+  font-family: 'Roboto Serif', sans-serif;
+  font-size: 12px;
+  background-color: #313838;
+  background-image: url(images/wallpaper-ferrari.jpg);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.imagen-uno {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+@media (max-width: 768px) {
+  .imagen-uno {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 900px;
+    height: 220px;
+  }
+}
+
+.titulo-pcipal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+label {
+  color: yellow;
+}
+
+a {
+  color: yellow !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: yellow;
+  font-size: larger;
+  font-style: italic;
+}
+
+li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  font-size: 16px;
+  background-color: maroon;
+  border: 2px solid none;
+}
+
+/*INICIO*/
 .foto-inicio {
   padding: 0%;
   border: 0%;
@@ -140,10 +232,8 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0 auto;
+  float: right;
+  margin-right: 200px;
   width: 500px;
   border: 20px solid black;
   border-radius: 15px;
@@ -157,13 +247,34 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px;
-  border: 12px solid yellow;
-  background-color: maroon;
+  height: 500px;
+  width: 1000px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  padding: 5px;
+  border: 5px solid black;
+  background-color: yellow;
   border-radius: 15px;
+}
+
+.ferrari-logo-circle {
+  margin-left: 200px;
+  margin-top: 60px;
+  width: 350px;
+  height: 400px;
+  padding: 5px;
+  border: 20px solid black;
+  background-color: yellow;
+  border-radius: 400px;
+  margin-bottom: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-width: thick;
+}
+
+.ferrari-logo-circle:hover {
+  border-radius: 20px;
 }
 
 /*FIN DE UBICACION*/
@@ -448,95 +559,4 @@ ul {
 }
 
 /*FIN BOOSTRAP CONTACT*/
-body {
-  color: #313838;
-  font-family: 'Roboto Serif', sans-serif;
-  font-size: 12px;
-  background-color: #313838;
-  background-image: url(images/wallpaper-ferrari.jpg);
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-img {
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.imagen-uno {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
-}
-
-@media (max-width: 768px) {
-  .imagen-uno {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 900px;
-    height: 220px;
-  }
-}
-
-.titulo-pcipal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-label {
-  color: #e7e716;
-}
-
-a {
-  color: #e7e716 !important;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  color: #e7e716;
-  font-size: larger;
-  font-style: italic;
-}
-
-li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 auto;
-  font-size: 16px;
-  background-color: maroon;
-  border: 2px solid none;
-}
 /*# sourceMappingURL=style.css.map */

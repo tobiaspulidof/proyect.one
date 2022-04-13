@@ -7,7 +7,7 @@
     width: auto;
     padding: 12px; 
     border: 12px solid black;
-    background-color: yellow;
+    background-color: $color-sec;
     border-radius: 30px;
     justify-content: flex-start;
     @media (max-width: 768px) {
@@ -45,8 +45,8 @@
     background-color: rgb(49, 56, 56);
     border-radius: 12px;
     &:hover{
-        border-color: yellow;
-        background-color: yellow;
+        border-color: $color-sec;
+        background-color: $color-sec;
     }
     input::placeholder{
         color: gray;
@@ -57,10 +57,10 @@
         font-size: larger;
         color: black;
         border: 0; 
-        background-color:yellow;
+        background-color: $color-sec;
         justify-content: center;
         &:hover{
-            background-color: yellow;
+            background-color: $color-sec;
         }
     
     

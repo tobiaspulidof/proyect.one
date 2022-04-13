@@ -34,7 +34,7 @@
     background-color: $color-principal;
     margin-bottom: 20px;
     width: 50%;
-    border: solid yellow;
+    border: solid $color-sec;
     border-radius: 10px;
     padding: 5px;
     margin-left: 20px;
@@ -49,21 +49,15 @@
 }    
       
 .ha{
-    height: 400px;
-    padding: 5px;  
-    object-fit: cover;
+    @include fotos-info()
 }
 
 .hb{
-    height: 400px;
-    padding: 5px;  
-    object-fit: cover;
+    @include fotos-info()
 }
 
 .hc{
-    height: 400px;
-    padding: 5px;  
-    object-fit: cover;
+    @include fotos-info()
 }
 
 .hd{
@@ -72,9 +66,7 @@
 }
 
 .he{
-    height: 400px;
-    padding: 5px;  
-    object-fit: cover;
+    @include fotos-info()
 }
 
 /*FIN DE INFO*/
