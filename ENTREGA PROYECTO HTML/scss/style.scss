@@ -45,14 +45,6 @@ img{
     height: min-content;
 }
 
-@media (max-width: 768px) {
-      .imagen-uno{
-          display: flex;
-          flex-wrap: wrap;
-          width: 900px;
-          height: 220px;
-      }
-}
 
 .titulo-pcipal{
     display: flex;
@@ -91,6 +83,18 @@ li{
     background-color: $color-principal;
     border: 2px solid none;
 }
+
+
+@media (max-width: 768px) {
+    .imagen-uno{
+        width: 100%;
+    }
+    a{
+        font-size: large;
+    }
+}
+
+
 
 @import "./PARTIALS/inicio";
 @import "./PARTIALS/galeria";

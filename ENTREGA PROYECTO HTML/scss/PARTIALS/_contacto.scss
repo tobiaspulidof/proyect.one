@@ -10,16 +10,6 @@
     background-color: $color-sec;
     border-radius: 30px;
     justify-content: flex-start;
-    @media (max-width: 768px) {
-        .contact{
-            display: flex;
-            flex-wrap: wrap;
-            width: min-content;
-            object-fit: cover;
-        }
-        
-    }
-
 
 }
 
@@ -112,3 +102,29 @@
 
 
 /*FIN BOOSTRAP CONTACT*/
+
+@media (max-width: 768px) {
+    .contact{
+        width: min-content;
+        object-fit: cover;
+    }
+    .contacting{
+        width: 100%;
+    }
+    .formcontainer{
+        display: grid;
+        grid-template-columns: 100%;
+        width: 100%;
+        padding: 10px;
+        grid-gap: 20px;
+    }
+    #form{
+        margin: 0 auto;
+        width: 85%;
+    }
+    .card{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+}

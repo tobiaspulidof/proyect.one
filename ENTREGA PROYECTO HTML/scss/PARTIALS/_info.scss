@@ -70,3 +70,13 @@
 }
 
 /*FIN DE INFO*/
+
+@media screen and (max-width: 768px) {
+    .contenedor-historico{
+        grid-template-columns: 100%;
+        width: 100%;
+    }
+    .de-info{
+        width: 100%;
+    }
+}

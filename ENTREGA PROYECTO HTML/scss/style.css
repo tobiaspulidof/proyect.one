@@ -33,18 +33,6 @@ img {
   height: min-content;
 }
 
-@media (max-width: 768px) {
-  .imagen-uno {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 900px;
-    height: 220px;
-  }
-}
-
 .titulo-pcipal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,6 +79,15 @@ li {
   border: 2px solid none;
 }
 
+@media (max-width: 768px) {
+  .imagen-uno {
+    width: 100%;
+  }
+  a {
+    font-size: large;
+  }
+}
+
 /*INICIO*/
 .foto-inicio {
   padding: 0%;
@@ -109,19 +106,6 @@ li {
   border: 25px solid yellow;
   border-radius: 20px;
   background-color: yellow;
-}
-
-@media (max-width: 768px) {
-  .foto-inicio .foto-inicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
 }
 
 .div-deinicio {
@@ -155,6 +139,29 @@ li {
   background-color: maroon;
 }
 
+.videoytexto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.textodevideo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: maroon;
+  width: 50%;
+  float: right;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+  border: 5px solid yellow;
+}
+
 /*FIN DE INICIO*/
 /*BOOTSTRAP DE INICIO*/
 .slide {
@@ -174,23 +181,27 @@ li {
           justify-content: center;
 }
 
-.textodevideo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: maroon;
-  width: 50%;
-  float: right;
-  padding: 5%;
-  margin-top: 5%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border-radius: 10px;
-  border: 5px solid yellow;
+/*FIN BOOSTRAP INICIO*/
+@media (max-width: 768px) {
+  .foto-inicio {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .videoytexto {
+    display: -ms-grid;
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .textodevideo {
+    width: 100%;
+  }
+  .div-deinicio {
+    width: 100%;
+  }
 }
 
-/*FIN BOOSTRAP INICIO*/
 /*GALERIA*/
 .container {
   display: -ms-grid;
@@ -222,9 +233,20 @@ li {
           transform: rotate(15deg);
   -webkit-transition: 2s ease-out;
   transition: 2s ease-out;
+  scale: 2 1;
 }
 
 /*FIN DE GALERIA*/
+@media screen and (max-width: 768px) {
+  .container {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .de-galeria {
+    width: 100%;
+  }
+}
+
 /*UBICACION*/
 .ubicacion {
   display: -webkit-box;
@@ -278,6 +300,22 @@ li {
 }
 
 /*FIN DE UBICACION*/
+@media screen and (max-width: 768px) {
+  .ubicacion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .ferrari-logo-circle {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .foto-fabrica {
+    width: 100%;
+  }
+}
+
 /*INFO*/
 .de-info {
   display: -ms-grid;
@@ -373,6 +411,17 @@ li {
 }
 
 /*FIN DE INFO*/
+@media screen and (max-width: 768px) {
+  .contenedor-historico {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    width: 100%;
+  }
+  .de-info {
+    width: 100%;
+  }
+}
+
 /*NAV*/
 ul {
   display: -webkit-box;
@@ -392,20 +441,20 @@ ul {
   height: 35px;
 }
 
+/*FIN NAV*/
 @media (max-width: 768px) {
-  ul ul {
+  ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 30px;
+    padding: 70px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
 }
 
-/*FIN NAV*/
 /*SECCION CONTACTO*/
 .contact {
   display: -webkit-box;
@@ -420,21 +469,6 @@ ul {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-}
-
-@media (max-width: 768px) {
-  .contact .contact {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
 }
 
 .contact-image {
@@ -559,4 +593,33 @@ ul {
 }
 
 /*FIN BOOSTRAP CONTACT*/
+@media (max-width: 768px) {
+  .contact {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .contacting {
+    width: 100%;
+  }
+  .formcontainer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    width: 100%;
+    padding: 10px;
+    grid-gap: 20px;
+  }
+  #form {
+    margin: 0 auto;
+    width: 85%;
+  }
+  .card {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

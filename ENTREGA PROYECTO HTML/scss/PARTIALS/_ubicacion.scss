@@ -42,3 +42,17 @@
 }
 
 /*FIN DE UBICACION*/
+
+@media screen and (max-width: 768px) {
+    .ubicacion{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .ferrari-logo-circle{
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .foto-fabrica{
+        width: 100%;
+    }
+}

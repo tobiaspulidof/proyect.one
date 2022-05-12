@@ -12,15 +12,7 @@
     border: map-get($border , border );
     border-radius: map-get($border , border-radius );
     background-color: $color-sec;
-    @media (max-width: 768px) {
-        .foto-inicio{
-            display: flex;
-            flex-wrap: wrap;
-            width: fit-content;
-        }
-    }
-
-
+    
 }
 
 .div-deinicio{
@@ -41,6 +33,26 @@
     border: 12px solid black;
     background-color: $color-principal; 
 }
+
+.videoytexto{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.textodevideo{
+    display: flex;
+    background-color: $color-principal;
+    width: 50%;
+    float: right;
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: 5px solid $color-sec;
+}
+
+
 /*FIN DE INICIO*/
 
 
@@ -62,16 +74,21 @@
 }
 
 
-.textodevideo{
-    display: flex;
-    background-color: $color-principal;
-    width: 50%;
-    float: right;
-    padding: 5%;
-    margin-top: 5%;
-    justify-content: center;
-    border-radius: 10px;
-    border: 5px solid $color-sec;
-}
-
 /*FIN BOOSTRAP INICIO*/
+
+@media (max-width: 768px) {
+    .foto-inicio{
+        width: fit-content;
+    }
+    .videoytexto{
+        display: grid;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .textodevideo{
+        width: 100%;
+    }
+    .div-deinicio{
+        width: 100%;
+    }
+}
